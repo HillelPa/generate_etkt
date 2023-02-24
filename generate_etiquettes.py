@@ -16,7 +16,7 @@ if __name__ == "__main__":
         ref_article, po, departement, nb_colis, colisage, pretickets, store_ready, lourd, fragile, taille, quantite = row[:11]
 
         # Copie du modèle
-        destination_file = './Etiquettes/TJX_ETIQUETTE_'+str(ref_article)+'.xlsx'
+        destination_file = str(ref_article)+'.xlsx'
 
         # Copie du fichier en utilisant la commande "cp"
         shutil.copy(source_file, destination_file)
